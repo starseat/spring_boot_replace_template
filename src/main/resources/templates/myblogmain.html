@@ -1,0 +1,160 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog + Left Sidebar | Triangle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+    <!--header include부분-->
+	<div th:include="fragments/header :: header_part"></div>
+
+    <section id="page-breadcrumb" style="background-image:url(images/home/under.png)">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">맛집 블로그~~</h1>
+                            <p>#맛집</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+
+    <section id="blog" class="padding-top">
+        <div class="container">
+            <div class="row">            
+                <div class="col-md-3 col-sm-5">
+                	<div class="sidebar blog-sidebar">   
+		                <div data-wow-duration="500ms" data-wow-delay="300ms">
+		                    <div class="feature-inner">
+		                    	<div class="portfolio-single">
+		                            <div class="portfolio-thumb">
+		                                <img src="images/portfolio/1.jpg" class="img-responsive" alt="">
+		                            </div>
+		                            <div class="portfolio-view">
+		                                <ul class="nav nav-pills">
+		                                    <li><a href="images/portfolio/1.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+		                                </ul>
+		                            </div>
+	                            </div>
+		                        <h2>내 프로필 사진</h2>
+		                        <p>블로그 설명~~</p>		                        
+		                        
+		                        <ul class="nav nav-pills">
+	                                <li><a href="#">#맛집</a></li>
+	                                <li><a href="#">#여행</a></li>
+	                            </ul>                  
+		                    </div>
+		                </div>   
+		            </div>       
+		            
+                    <div class="sidebar-item categories">
+                        <h3>카테고리</h3>
+                        <ul class="nav navbar-stacked">
+                            <li><a href="#">맛집<span class="pull-right">(1)</span></a></li>
+                            <li class="active"><a href="#">일상<span class="pull-right">(8)</span></a></li>
+                            <li><a href="#">여행<span class="pull-right">(4)</span></a></li>
+                            <li><a href="#">Sed do<span class="pull-right">(9)</span></a></li>
+                            <li><a href="#">Eiusmod<span class="pull-right">(3)</span></a></li>
+                            <li><a href="#">Mockup<span class="pull-right">(4)</span></a></li>
+                            <li><a href="#">Ut enim ad minim <span class="pull-right">(2)</span></a></li>
+                            <li><a href="#">Veniam, quis nostrud <span class="pull-right">(8)</span></a></li>
+                        </ul>
+                    </div>		            
+		            
+                    <div class="sidebar blog-sidebar">
+                        <div class="sidebar-item popular">
+                            <h3>내 이웃목록</h3>
+                            <ul class="gallery">
+                                <li><a href="#"><img src="images/portfolio/popular1.jpg" alt="">송현</a></li>
+                                <li><a href="#"><img src="images/portfolio/popular2.jpg" alt="">종우</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar blog-sidebar">		            
+	                    <ul class="nav navbar-nav navbar-default">
+	                        <li><a href="#"><i class="fa fa-tag"></i>관리</a></li>
+	                        <li><a href="#"><i class="fa fa-clock-o"></i>통계</a></li>
+	                    </ul>           
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-md-9 col-sm-7">
+                    <div class="row">
+                         <div class="col-md-12 col-sm-12">
+                            <div class="single-blog two-column">
+                                <div class="post-thumb">
+                                    <a href="/blogdetail"><img src="images/blog/8.jpg" class="img-responsive" alt=""></a>
+                                    <div class="post-overlay">
+                                        <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
+                                    </div>
+                                </div>
+                                <div class="post-content overflow">
+                                    <h2 class="post-title bold"><a href="/blogdetail">신촌맛집 불백</a></h2>
+                                    <h3 class="post-author"><a href="/blogdetail">너무 맛있당</a></h3>
+                                    <p>내용~~~~~~~~~~~~~~~~~~~~~~ molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber [...]</p>
+                                    <a href="/blogdetail" class="read-more">글 더보기</a>
+                                    <div class="post-bottom overflow">
+                                        <ul class="nav navbar-nav post-nav">
+                                            <li><a href="#"><i class="fa fa-heart"></i>좋아요</a></li>
+                                            <li><a href="#"><i class="fa fa-comments"></i>댓글</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-pagination">
+                        <ul class="pagination">
+                          <li><a href="#">left</a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li class="active"><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">8</a></li>
+                          <li><a href="#">9</a></li>
+                          <li><a href="#">right</a></li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!--/#blog-->
+
+	
+    <!--footer include부분-->
+	<div th:include="fragments/footer :: footer_part"></div>
+</body>
+</html>
